@@ -35,7 +35,7 @@
     <main class="container py-4">
         <h1>Check your package delivery Time and Weather in one place!</h1>
         <form action="" method="get">
-          <div class="form-group">
+          <div class="form-group col-md-6">
             <label for="search">Please enter a UPS tracking number</label>
             <input type="text" name="search" id="search" class="form-control" value="XCA123YHE85D23400">
           </div>
@@ -43,9 +43,9 @@
         </form>
         <div class="row pb-4">
         <div class="container col-lg-6">
-        <h2 class="mt-3 col-lg-12">Your package is scheduled to arrive on:</h2>
+        <h2 class="mt-3 col-lg-12">Package is scheduled to arrive on:</h2>
           <div class="row">
-            <div class="col col-2 text-right font-weight-bold">
+            <div class="col col-3 text-right font-weight-bold">
               Date:
             </div>
             <div class="col-auto">
@@ -53,7 +53,7 @@
             </div>
             </div>
           <div class="row">
-            <div class="col col-2 text-right font-weight-bold">
+            <div class="col col-3 text-right font-weight-bold">
               Time:
             </div>
             <div class="col-auto">
@@ -61,7 +61,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col col-2 text-right font-weight-bold">
+            <div class="col col-3 text-right font-weight-bold">
               Where:
             </div>
             <div class="col-auto">
@@ -73,7 +73,7 @@
         <h2 class="mt-3 col-12">Weather at time of delivery will be:</h2>
 
             <div class="row">
-              <div class="col col-2 text-right font-weight-bold">
+              <div class="col col-3 text-right font-weight-bold">
                 Low:
               </div>
               <div class="col-auto">
@@ -81,7 +81,7 @@
               </div>
               </div>
             <div class="row">
-              <div class="col col-2 text-right font-weight-bold">
+              <div class="col col-3 text-right font-weight-bold">
                 High:
               </div>
               <div class="col-auto">
@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col col-2 text-right font-weight-bold">
+              <div class="col col-3 text-right font-weight-bold">
                 Cond:
               </div>
               <div class="col-auto">
@@ -104,7 +104,7 @@
         Copyright 2018 Gemini One Software
       </div>
     </footer>
-    <!-- Modal -->
+    <!-- Sign In Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
@@ -119,11 +119,41 @@
               <input type="text" class="form-control mt-4" placeholder="Email address">
               <input type="text" class="form-control mt-4" placeholder="Password">
             </form>
+            <hr />
+            <p>
+              New to Weather App&TRADE;? Sign up here: </p>
+              <button class="btn btn-link" data-dismiss="modal" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+            <!-- </p> -->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary">Sign In</button>
+            <a  class="btn btn-primary text-white"  href="./add_package.html">Sign In</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signUpModalLabel">Please Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="get">
+              <input type="text" class="form-control mt-4" placeholder="Email address">
+              <input type="text" class="form-control mt-4" placeholder="Password">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <a  class="btn btn-primary text-white" href="./add_package.html">Sign In</a>
+          </div>
+
         </div>
       </div>
     </div>

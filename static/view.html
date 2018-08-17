@@ -24,8 +24,8 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <div class="navbar-nav mt-2 mt-md-0 align-items-center">         
                   <a class="nav-link nav-item" href="./index.html">Home</a>    
-                  <a class="nav-link nav-item" href="./view.html">View</a>    
-                  <a class="nav-link nav-item active" href="./add_package.html">Add <span class="sr-only">(current)</span></a>                  
+                  <a class="nav-link nav-item active" href="./view.html">View <span class="sr-only">(current)</span></a>    
+                  <a class="nav-link nav-item" href="./add_package.html">Add</a>                  
                 </div>
                 <div class="navbar-nav ml-md-auto mt-2 mt-md-0 align-items-center">         
                     <a class="nav-link nav-item" data-toggle="modal" data-target="#logoutModal">Log Out</a>                  
@@ -35,59 +35,62 @@
           </nav>
     </header>
     <main class="container py-4">
-      <form>
-        <h3>Please fill out your package information</h3>
-        <div class="row">
-          <div class="form-group col-md-7">
-            <label for="name">Product name</label>
-            <input type="text" name="name" id="name" class="form-control" value="Desk">
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-7">
-            <label for="tracking">Tracking Number</label>
-            <input type="text" name="tracking" id="tracking" class="form-control" value="XCA123YHE85D23400">
-          </div>
-          <div class="form-group col-md-5">
-            <label for="carrier">Carrier</label>
-            <select name="carrier" id="carrier" class="form-control" value="UPS" disabled>
-              <option selected>UPS</option>
-            </select>
-          </div>
-        </div>
-        <hr>
-        <div class="row mt-4">
-          <p class="col-auto">Press to autofill remaining information</p>
-          <button class="btn btn-primary col-auto">Search</button>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-7">
-            <label for="address">Street</label>
-            <input type="text" name="address" id="address" class="form-control" value="123 Easy Street">
-          </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-md-7">
-              <label for="city">City</label>
-              <input type="text" name="city" id="city" class="form-control" value="Lynchburg">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="state">State</label>
-              <select name="state" id="state" class="form-control" value="VA">
-                <option selected>VA</option>
-              </select>
-            </div>
-              <div class="form-group col-md-3">
-                <label for="zipcode">Zipcode</label>
-                <input type="text" name="zipcode" id="zipcode" class="form-control" value="24503">
-              </div>
-          </div>
-          <div class="btn-group mt-4">
-            <button class="btn btn-secondary">Clear</button>
-            <button class="btn btn-primary">Save &AMP; Close</button>
-            <button class="btn btn-primary">Save &AMP; Next</button>
-          </div>
-      </form>
+      <table class="table">
+        <tr>
+          <th>Product</th>
+          <th>Tracking #</th>
+          <th>Carrier</th>
+          <th>Address</th>
+          <th>City</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Desk</td>
+          <td>XCA123YHE85D23400</td>
+          <td>UPS</td>
+          <td>123 Easy Street</td>
+          <td>Lynchburg</td>
+          <td><button class="btn btn-sm btn-outline-primary">Status</button></td>
+          <td><button class="btn btn-sm btn-outline-danger">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Desk</td>
+          <td>XCA123YHE85D23400</td>
+          <td>UPS</td>
+          <td>123 Easy Street</td>
+          <td>Lynchburg</td>
+          <td><button class="btn btn-sm btn-outline-primary">Status</button></td>
+          <td><button class="btn btn-sm btn-outline-danger">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Desk</td>
+          <td>XCA123YHE85D23400</td>
+          <td>UPS</td>
+          <td>123 Easy Street</td>
+          <td>Lynchburg</td>
+          <td><button class="btn btn-sm btn-outline-primary">Status</button></td>
+          <td><button class="btn btn-sm btn-outline-danger">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Desk</td>
+          <td>XCA123YHE85D23400</td>
+          <td>UPS</td>
+          <td>123 Easy Street</td>
+          <td>Lynchburg</td>
+          <td><button class="btn btn-sm btn-outline-primary">Status</button></td>
+          <td><button class="btn btn-sm btn-outline-danger">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Desk</td>
+          <td>XCA123YHE85D23400</td>
+          <td>UPS</td>
+          <td>123 Easy Street</td>
+          <td>Lynchburg</td>
+          <td><button class="btn btn-sm btn-outline-primary">Status</button></td>
+          <td><button class="btn btn-sm btn-outline-danger">Delete</button></td>
+        </tr>
+      </table>
     </main>
     <footer class="fixed-bottom text-white bg-info py-2">
       <div class="container">
